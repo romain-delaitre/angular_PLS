@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Angular App</title>
+  </head>
+  <body>
+  <form (ngSubmit)="PreviewData()" [formGroup]="DataForm">
+<div class="form-group row" *ngFor="let data of FormData;" >
+        <label class="col-md-2 col-form-label" >Votre pseudo : </label>
+        <div class="col-md-10">
+          <input type="text" class="form-control"  name="pseudo_form">
+        </div>
+      </div>
+<button class="btn btn-primary float-right" type="submit" >VALIDATION</button>
+</form>
+  </body>
+</html>
